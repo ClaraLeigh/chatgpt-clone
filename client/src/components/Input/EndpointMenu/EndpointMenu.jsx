@@ -25,7 +25,7 @@ import {
 import DialogTemplate from '~/components/ui/DialogTemplate';
 import { useLocalize, useLocalStorage, useConversation, useDefaultConvo } from '~/hooks';
 import { cn, cleanupPreset, getDefaultConversation } from '~/utils';
-import PromptLibrary from './PromptLibrary';
+import {PromptLibrary} from './PromptLibrary';
 
 import store from '~/store';
 
