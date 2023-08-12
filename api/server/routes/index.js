@@ -4,6 +4,7 @@ const messages = require('./messages');
 const convos = require('./convos');
 const presets = require('./presets');
 const prompts = require('./prompts');
+const promptLibrary = require('./promptLibrary');
 const search = require('./search');
 const tokenizer = require('./tokenizer');
 const auth = require('./auth');
@@ -23,6 +24,7 @@ module.exports = {
   convos,
   presets,
   prompts,
+  promptLibrary,
   auth,
   keys,
   oauth,

@@ -36,6 +36,7 @@
     "express-mongo-sanitize": "^2.2.0",
     "express-rate-limit": "^6.9.0",
     "express-session": "^1.17.3",
+    "glob": "^10.3.3",
     "googleapis": "^118.0.0",
     "handlebars": "^4.7.7",
     "html": "^1.0.0",

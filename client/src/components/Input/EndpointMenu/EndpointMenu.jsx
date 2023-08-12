@@ -23,8 +23,10 @@ import {
   TooltipContent,
 } from '~/components/ui/';
 import DialogTemplate from '~/components/ui/DialogTemplate';
-import { cn, cleanupPreset } from '~/utils';
 import { useLocalize, useLocalStorage, useConversation, useDefaultConvo } from '~/hooks';
+import { cn, cleanupPreset, getDefaultConversation } from '~/utils';
+import PromptLibrary from './PromptLibrary';
+
 import store from '~/store';
 
 export default function NewConversationMenu() {
@@ -214,6 +216,7 @@ export default function NewConversationMenu() {
                   {showPresets ? localize('com_endpoint_hide') : localize('com_endpoint_show')}{' '}
                   {localize('com_endpoint_presets')}
                 </span>
+                <PromptLibrary onSelect={onSelectPreset} />
                 <FileUpload onFileSelected={onFileSelected} />
                 <Dialog>
                   <DialogTrigger asChild>
